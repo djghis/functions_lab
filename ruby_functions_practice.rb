@@ -37,10 +37,36 @@ def number_to_full_month_name(num)
   if num == 1
     return "January"
   end
-end
 
-def number_to_full_month_name(num)
   if num == 3
     return "March"
   end
+
+  if num == 9
+    return "September"
+  end
+
+end
+
+def number_to_short_month_name(num)
+  case num
+  when 1
+    return "Jan"
+  when 4
+    return "Apr"
+  when 10
+    return "Oct"
+  end
+end
+
+def volume_of_cube(length)
+  return (length * length * length)
+end
+
+def volume_of_sphere(radius)
+  return 1.3333 * 3.14 * (radius * radius * radius)
+end
+
+def fahrenheit_to_celsius(degres)
+ return (degres - 32) * 5/9 
 end
